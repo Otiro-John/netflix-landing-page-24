@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+}
+body{
+    background-color: #000;
+    scroll-behavior: smooth;
+}
+.header{
+    width: 100%;
+    height: 700px;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(images/h1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10px 25px;
+border-bottom: 10px solid rgb(37, 36, 36);
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.logo{
+    width: 200px;
+}
+.signin{
+    width:80px;
+    height: 40px;
+    text-align: center;
+    background-color: red;
+    color: #fff;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.header-content{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+}
+.header-content h1{
+    color: #fff;
+    font-size: 65px;
+    font-weight: 800;
+}
+
+.header-content h3{
+color: #fff;
+font-size: 28px;
+font-weight: 500;
+}
+.header-content p{
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    padding-top: 30px;
+}
+.email{
+    width:700px;
+    height: 60px;
+    background-color: #fff;
+    display: inline-flex;
+    padding: 10px;
+    border-radius: 3px;
+    margin-top: 20px;
+}
+.email input{
+    width: 520px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 5px;
+}
+.email button{
+    width: 170px;
+    height: 60px;
+    background-color: red;
+    padding: 10px;
+    color: #fff;
+    margin-top: -10px;
+    position: absolute;
+    border: none;
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+}
+.email button span{
+    font-size: 25px;
+}
+
+.row{
+    width: 100%;
+    height: auto;
+}
+.co{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-wrap: wrap;
+    color: #fff;
+   padding: 30px;
+   margin-top: -10px;
+   border-bottom: 10px solid rgb(37, 36, 36);
+}
+.text-col{
+    width: 600px;
+    height: 380px;
+    margin-left: -100px;
+}
+.text-col h2{
+    font-size: 40px;
+    margin-top: 20%;
+    font-weight: bold;
+    margin-left: 15px;
+}
+.text-col p{
+    margin-left: 15px;
+    font-size: 25px;
+    padding-top: 15px;
+}
+.img-col{
+    width: 500px;
+    height: 400px;
+    margin-left: 50px;
+}
+.img-col img{
+    width: 500px;
+    height: 400px;
+}
+#txt{
+    margin-left: 100px;
+}
+#f{
+    margin-left: 100px;
+}
+.faqs{
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    border-bottom: 10px solid rgb(37, 36, 36);
+}
+.faqs h1{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-weight: 600;
+    color: #fff;
+}
+button.accordion{
+    background-color: rgb(37, 36, 36);
+    color: #fff;
+    cursor: pointer;
+    padding: 20px;
+    width: 50%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 28px;
+    font-weight: 500;
+    transition: 0.5s;
+}
+button.accordion:after{
+    content: '\02795';
+    font-size: 20px;
+    color: #fff;
+    float: right;
+    margin-left: 5px;
+}
+button.accordion.active:after{
+    content: '\02795';
+transform: rotate(90deg);
+}
+div.pannel{
+    width: 50%;
+    background-color: rgb(37, 36, 36);
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.6s;
+    opacity: 0;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    color: #fff;
+    padding: 10px;
+}
+div.pannel.show{
+    opacity: 1;
+    max-height: 500px;
+}
+div.pannel p{
+    text-align: left;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 35px;
+}
+
+#e{
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    padding-top: 30px;
+}
+#mail{
+    margin-bottom: 30px;
+}
+#footer{
+    padding-top: 50px;
+}
+.footer{
+    width: 100%;
+    height: auto;
+}
+.footer h3{
+color: rgb(86, 81, 81);
+margin-left: 200px;
+}
+.footer-row{
+    width: auto;
+    height: auto;
+    display: flex;
+    margin-left: 200px;
+    margin-top: 30px;
+}
+.footer-col{
+    width: 200px;
+    height: auto;
+}
+
+.footer-col li a{
+font-size: 13px;
+font-weight: 400;
+color:  rgb(86, 81, 81);
+cursor: pointer;
+}
+.footer #span{
+    font-size: 13px;
+    margin-left: 200px;
+    margin-top: 30px;
+    color: rgb(86, 81, 81);
+}
